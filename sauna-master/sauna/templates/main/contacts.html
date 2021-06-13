@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block body%}
+<style>
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  color: #465457;
+}
+    .d1 h1 {
+  color: #F16246;
+  text-align: center;
+}
+.d1 h1:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #E5EDEA;
+  z-index: -1;
+}
+.d1 span {
+  background: white;
+  padding: 0 20px;
+}
+</style>
+<div class="d1"><h1><span style="font-size: 40px; color:gray;">Контакты</span></h1></div>
+<center><h2>Работаем в выходные и праздничные дни с 9.00 до 21.00</h2></center>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac3ab513ae23fd46d0d39e75d9bbb4a5151fa30e046e389c0931321c964b6d51f&amp;width=100%25&amp;height=370&amp;lang=ru_RU&amp;scroll=true"></script>
+{% endblock %}
